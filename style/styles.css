@@ -7,11 +7,11 @@ backround color: #6C757D;
 
 body {
     background-color: #142638;
-   color: #c3b6b6 ; 
+   color:#CCCCCC ; 
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
-
 }
+
 .page-header{
     display: flex;
     justify-content: space-between;
@@ -96,8 +96,8 @@ table {
     margin-right: auto;
     height: 200px;
     width: 400px;
-    color: black;
-    background-color: white;
+    color: #142638;
+    background-color:#CCCCCC ; 
 }
 
 .basicLabel {
@@ -132,7 +132,7 @@ table {
   }
   
   .grid__item {
-    background-color: #ffffff;
-    color:#0e0d0d;
+    color: #142638;
+    background-color:#CCCCCC ;
     padding: 20px;
   }
