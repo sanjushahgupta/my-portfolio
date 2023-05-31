@@ -6,8 +6,8 @@ backround color: #6C757D;
 
 
 body {
-    background-color: #6C757D;
-   color: #fbfbfb;
+    background-color: #142638;
+   color: #c3b6b6 ; 
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
 
@@ -25,7 +25,6 @@ font-size: 20px;
  
  .navigation-list-item{
     margin-right: 10px;
-    color:#000000;
  }
 
 #profileImg {
@@ -38,13 +37,19 @@ font-size: 20px;
 }
 
 .intro {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
+    font-weight:lighter;
 }
 
+#profileName{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
 
 a {
-    color:#000000;
+    color: #50B4F5;
 }
 
 a:hover,
@@ -56,11 +61,11 @@ a:focus,
 }
 
 a:visited{
-    color: #FFA500;
+    color: #AB79C1;
 }
 
 a:active {
-    color: #FFFFE0;
+    color: #00CED1;
 }
 
 #submit {
@@ -91,6 +96,8 @@ table {
     margin-right: auto;
     height: 200px;
     width: 400px;
+    color: black;
+    background-color: white;
 }
 
 .basicLabel {
