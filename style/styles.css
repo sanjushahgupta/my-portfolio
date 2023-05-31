@@ -1,0 +1,111 @@
+/*
+colors used
+Text Color():#F7F7F7;
+backround color: #6C757D;
+*/
+
+body {
+    background-color: #6C757D;
+    color: #F7F7F7;
+font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul li {
+    display: inline;
+    position: relative;
+    margin-right: 20px;
+}
+
+#profileImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer,
+footer.p {
+    position: fixed;
+    font-size: 20px;
+    bottom: 0;
+    margin: 20px;
+
+}
+
+.intro {
+    font-size: 23px;
+    text-align: center;
+}
+
+.span {
+    font-weight: bold;
+}
+
+a {
+    color: #3e1702;
+}
+
+a:hover,
+a:focus {
+    box-shadow: inset 100% 0 0 0;
+    opacity: 0.5;
+}
+
+a:visited {
+    color: #dcae96;
+}
+
+a:active {
+    color: #57514e;
+}
+
+#submit {
+    background-color: #010101;
+    color: #c3b6b6;
+
+}
+
+#submit:hover,
+#submit:focus {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.contact {
+    font-size: 20px;
+    text-align: center;
+}
+
+.aboutMe {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+#contactHeader {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 400px;
+
+}
+
+.basicLabel {
+    display: block;
+    font-size: smaller;
+}
