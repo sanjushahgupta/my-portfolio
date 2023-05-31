@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
-    <link rel="icon" type="images/png" href="images/sanju-logo.png">
+    <link rel="icon" type="images/png" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,19 +17,21 @@
 </head>
 
 <body>
-    <header>
-        <img src="./images/sanju-logo.png" height="50" width="50" alt="logo"><br>
-
+    <header class="page-header">
+        <img src="images/logo.png" width="120" height="120" class="page-header-item" alt="logo">
         <nav>
-            <ul role="menubar">
+            <ul role="menubar" class="navigation-list">
                 <li role="presentation">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="navigation-list-item">Home</a>
                 </li>
                 <li role="presentation">
-                    <a href="about.html">About Me</a>
+                    <a href="work.html" class="navigation-list-item">Work</a>
                 </li>
                 <li role="presentation">
-                    <a href="contact.html">Contact Me</a>
+                    <a href=" about.html" class="navigation-list-item">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a href=" contact.html" class="navigation-list-item">Contact Me</a>
                 </li>
             </ul>
         </nav>
@@ -60,16 +62,18 @@
             <input type="submit" value="Send message" id="submit"><br>
         </form>
     </div>
-    <footer>
+    <footer class="page-footer">
         <p>Find me on</p>
-        <a href="https://www.linkedin.com/feed/" target="_blank">
-            <img src="images/linkedin.svg" alt=" linkedin"></a>
-        &nbsp; &nbsp;
-        <a href="https://github.com/sanjushahgupta" target="_blank">
-            <img src="images/github-icon.svg" alt="github"></a>
-        &nbsp; &nbsp;
-        <a href="https://medium.com/@glienicker" target="_blank"><img src="
+        <div class="social-media">
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img src="images/linkedin.svg" alt=" linkedin"></a>
+            &nbsp; &nbsp;
+            <a href="https://github.com/sanjushahgupta" target="_blank">
+                <img src="images/github-icon.svg" alt="github"></a>
+            &nbsp; &nbsp;
+            <a href="https://medium.com/@glienicker" target="_blank"><img src="
                      images/medium-icon.svg" alt="medium"></a>
+        </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
 </body>
