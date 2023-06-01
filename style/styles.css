@@ -1,15 +1,13 @@
 /*
 colors used
 Text Color():#F7F7F7;
-backround color: #6C757D;
+backround color: #142638;
 */
-
-
 body {
     background-color: #142638;
    color:#CCCCCC ; 
-font-family: 'Roboto', sans-serif;
-font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 .page-header{
@@ -27,7 +25,7 @@ font-size: 20px;
     margin-right: 10px;
  }
 
-#profileImg {
+#profile-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -36,68 +34,50 @@ font-size: 20px;
     border-radius: 50%;
 }
 
-.intro {
-    font-size: 20px;
+.intro{
+    font-size: 25px;
     text-align: center;
     font-weight:lighter;
 }
-
-#profileName{
+.short-description{
     text-align: center;
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.7;
 }
-
 a {
     color: #50B4F5;
 }
 
 a:hover,
-a:focus,
-.demoBtn.hover {
-    box-shadow: inset 100% 0 0 0;
+a:focus{
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.4;
+    text-decoration: none;
 }
 
 a:visited{
-    color: #AB79C1;
+    color: #00CED1;
+  
 }
 
 a:active {
-    color: #00CED1;
-}
-
-#submit {
-    background-color: #010101;
-    color: #c3b6b6;
-
-}
-
-#submit:hover,
-#submit:focus,
-.demoBtn:hover {
-    cursor: pointer;
-    opacity: 0.5;
+    color: #AB79C1;
 }
 
 .contact {
     text-align: center;
 }
 
-#aboutMe, #contactHeader, .mywork{
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 table {
     margin-left: auto;
     margin-right: auto;
     height: 200px;
-    width: 400px;
+    width: 550px;
     color: #142638;
-    background-color:#CCCCCC ; 
+    background-color:#efe8e8 ; 
+    padding: 3px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .basicLabel {
@@ -105,14 +85,22 @@ table {
     font-size: smaller;
 }
 
-.demoBtn{
-    color: #040506;
-     background-color: #FFA500;
-     border-radius: 50%;
-     border: 1px;
-     padding: 10px;
+.cv-btn, button,#submit{
+    display: inline-block;
+  justify-content: right;
+    text-decoration: none;
+    color: #00CED1;
+    background-color:#090909;
      margin: 10px;
+     border-radius: 8px;
+     transition: 2s;
+     padding: 8px;
  }
+
+.cv-btn:hover, button:hover, #submit:hover{
+border-radius: 50%;
+cursor:pointer;
+}
 
 .page-footer{
     text-align: center;
@@ -136,3 +124,63 @@ table {
     background-color:#CCCCCC ;
     padding: 20px;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  }
+  @media all and (min-width: 1201px) {
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    intro, intro, intro {
+        font-size: 24px;
+    }
+    
+  }
+  
+.home-town-img{
+  margin-top: 80px;
+}
+@keyframes dove-move{
+    from{
+        transform: translate(400px,-120px);
+      
+    }
+    to{
+        transform: translate(0px,80px); 
+    }
+}
+.dove{
+    animation-direction:alternate;
+    animation-duration: 8s;
+    animation-name: dove-move;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    height:80px;
+    width:auto;
+}
+
