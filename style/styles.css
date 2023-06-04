@@ -3,17 +3,20 @@ colors used
 backround color: #142638;
 */
 :root{
-    --deepNavyBlue : #142638;
-    --lightGray:#CCCCCC;
+    --deepNavyBlue :#abb8c3;
+    --lightGray:#142638;
     --skyBlue:#50B4F5;
     --darkBlack:#090909;
     --lightBlue:#00CED1;
-    --lightPurple:#AB79C1;
+    --lightPurple:#6b3915;
     --widthHeight:200px;
     --forCircleShape:50%;
     --gapSize:10px;
     --fontSize:20px;
     --radiusSize:8px;
+    --white:#e8e5e5;
+    --wheat:#758ea4;
+    --topAppBar:#2b2b2b ;
 }
 body {
     background-color: var(--deepNavyBlue );
@@ -26,6 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: var(--gapSize);
+    background-color:  var(--topAppBar);
 }
  
  .navigation-list li{
@@ -54,27 +58,34 @@ body {
     text-align: center;
     font-size: var(--fontSize);
 }
-a {
-    color:var( --skyBlue);
+
+
+
+.contact {
+    text-align: center;
 }
+
+header.page-header a{
+    color: var(--skyBlue);
+  }
+
+  header.page-header a:hover,
+  header.page-header a:focus
+  {
+   text-decoration: none;
+   opacity: 0.5;
+  }
+
 
 a:hover,
 a:focus{
     cursor: pointer;
     opacity: 0.4;
-    text-decoration: none;
 }
 
 a:visited{
-    color: var( --lightBlue);
-}
-
-a:active {
-    color: var(--lightPurple);
-}
-
-.contact {
-    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 table {
@@ -82,8 +93,8 @@ table {
     margin-right: auto;
     height: var(--widthHeight);
     width: 550px;
-    color:var(--deepNavyBlue );
-    background-color:var(--lightGray) ; 
+    color:var(--lightGray);
+    background-color:var(--wheat) ; 
     padding: 3px;
     border-radius:var(--gapSize);
     text-align: center;
@@ -94,12 +105,10 @@ table {
     font-size: smaller;
 }
 
-.cv-btn,button,#submit{
-    display: inline-block;
-  justify-content: right;
-    text-decoration: none;
-    color:var( --skyBlue);
-    background-color:var(--darkBlack);
+.cv-btn ,button,#submit{
+  text-align: center;
+    background-color: var(--topAppBar);
+    color:var( --deepNavyBlue); 
      margin: var(--gapSize);
      border-radius:  var(--radiusSize);
      padding:var(--radiusSize);
@@ -128,8 +137,8 @@ cursor:pointer;
   }
   
   .grid__item {
-    color: var(--deepNavyBlue);
-    background-color:var(--lightGray) ;
+    color: var( --white);
+    background-color:var(--topAppBar) ;
     padding: var(--gapSize);
   }
 
@@ -188,4 +197,6 @@ cursor:pointer;
     animation-timing-function:linear;
     width:auto;
 }
-
+.pageHeaderLink{
+    color:var(--white);
+}
