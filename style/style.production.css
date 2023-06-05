@@ -1,10 +1,10 @@
     /*
     colors used
-    backround color: #abb8c3;
+    backround color: #C2C4CD;
     */
     body {
-        background-color: #abb8c3;
-    color:#142638; 
+        background-color:#C2C4CD;
+    color:#0a0909; 
         font-family: 'Roboto', sans-serif;
         font-size: 19px;
     }
@@ -181,13 +181,68 @@
         font-size: 20px;
     
     }
-
+    @-webkit-keyframes plane-move{
+        from{
+            -webkit-transform: translate(460px,500px);
+                    transform: translate(460px,500px);
+        
+        }
+        to{
+            -webkit-transform: translate(1000px,100px);
+                    transform: translate(1000px,100px);
+        }
+    }
+    @keyframes plane-move{
+        from{
+            -webkit-transform: translate(460px,500px);
+                    transform: translate(460px,500px);
+        
+        }
+        to{
+            -webkit-transform: translate(1000px,100px);
+                    transform: translate(1000px,100px);
+        }
+    }
+    .plane{
+        -webkit-animation-direction:normal;
+                animation-direction:normal;
+        -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+        -webkit-animation-name: plane-move;
+                animation-name: plane-move;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function:linear;
+                animation-timing-function:linear;
+        width:auto;
+    }
     @media screen and (min-width: 320px) and (max-width: 480px) {
         .grid {
             -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
         }
-    
+        @-webkit-keyframes plane-move{
+            from{
+                -webkit-transform: translate(100px,200px);
+                        transform: translate(100px,200px);
+            
+            }
+            to{
+                -webkit-transform: translate(200px,50px);
+                        transform: translate(200px,50px);
+            }
+        }
+        @keyframes plane-move{
+            from{
+                -webkit-transform: translate(100px,200px);
+                        transform: translate(100px,200px);
+            
+            }
+            to{
+                -webkit-transform: translate(200px,50px);
+                        transform: translate(200px,50px);
+            }
+        }
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -202,36 +257,82 @@
                     flex-direction: column;
         }
         @-webkit-keyframes plane-move{
-            from {
-                -webkit-transform: translate(200px, 120px);
-                        transform: translate(200px, 120px);
+            from{
+                -webkit-transform: translate(150px,200px);
+                        transform: translate(150px,200px);
+            
             }
-            to {
-                -webkit-transform: translate(400px, 60px);
-                        transform: translate(400px, 60px);
+            to{
+                -webkit-transform: translate(200px,100px);
+                        transform: translate(200px,100px);
             }
         }
         @keyframes plane-move{
-            from {
-                -webkit-transform: translate(200px, 120px);
-                        transform: translate(200px, 120px);
+            from{
+                -webkit-transform: translate(150px,200px);
+                        transform: translate(150px,200px);
+            
             }
-            to {
-                -webkit-transform: translate(400px, 60px);
-                        transform: translate(400px, 60px);
+            to{
+                -webkit-transform: translate(200px,100px);
+                        transform: translate(200px,100px);
             }
         }
-        
     }
-
     @media screen and (min-width: 769px) and (max-width: 1024px) {
         .grid {
             -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
             grid-template-columns: 1fr 1fr 1fr;
         }
+    
+        @-webkit-keyframes plane-move{
+            from{
+                -webkit-transform: translate(250px,300px);
+                        transform: translate(250px,300px);
+            
+            }
+            to{
+                -webkit-transform: translate(400px,100px);
+                        transform: translate(400px,100px);
+            }
+        }
+    
+        @keyframes plane-move{
+            from{
+                -webkit-transform: translate(250px,300px);
+                        transform: translate(250px,300px);
+            
+            }
+            to{
+                -webkit-transform: translate(400px,100px);
+                        transform: translate(400px,100px);
+            }
+        }
     }
     @media screen and (min-width: 1025px) and (max-width: 1200px) {
-
+        @-webkit-keyframes plane-move{
+            from{
+                -webkit-transform: translate(250px,300px);
+                        transform: translate(250px,300px);
+            
+            }
+            to{
+                -webkit-transform: translate(400px,100px);
+                        transform: translate(400px,100px);
+            }
+        }
+        @keyframes plane-move{
+            from{
+                -webkit-transform: translate(250px,300px);
+                        transform: translate(250px,300px);
+            
+            }
+            to{
+                -webkit-transform: translate(400px,100px);
+                        transform: translate(400px,100px);
+            }
+        }
+      
     }
     @media all and (min-width: 1201px) {
         .grid {
@@ -256,41 +357,4 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    }
-
-    @-webkit-keyframes plane-move{
-        from{
-            -webkit-transform: translate(480px,240px);
-                    transform: translate(480px,240px);
-        
-        }
-        to{
-            -webkit-transform: translate(700px,180px);
-                    transform: translate(700px,180px); 
-        }
-    }
-
-    @keyframes plane-move{
-        from{
-            -webkit-transform: translate(480px,240px);
-                    transform: translate(480px,240px);
-        
-        }
-        to{
-            -webkit-transform: translate(700px,180px);
-                    transform: translate(700px,180px); 
-        }
-    }
-    .plane{
-        -webkit-animation-direction:normal;
-                animation-direction:normal;
-        -webkit-animation-duration: 6s;
-                animation-duration: 6s;
-        -webkit-animation-name: plane-move;
-                animation-name: plane-move;
-        -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-        -webkit-animation-timing-function:linear;
-                animation-timing-function:linear;
-        width:auto;
     }
