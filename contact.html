@@ -18,50 +18,36 @@
 
 <body>
     <header class="page-header">
-        <img src="images/logo.png" width="120" height="120" class="page-header-item" alt="logo">
+        <img src="images/logo.png" class="page-header-logo" alt="logo">
         <nav>
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
-                    <a href="index.html" class="navigation-list-item">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li role="presentation">
-                    <a href="work.html" class="navigation-list-item">Work</a>
+                    <a href="work.html">Work</a>
                 </li>
                 <li role="presentation">
-                    <a href=" about.html" class="navigation-list-item">About Me</a>
+                    <a href=" about.html">About Me</a>
                 </li>
                 <li role="presentation">
-                    <a href=" contact.html" class="navigation-list-item">Contact Me</a>
+                    <a href=" contact.html">Contact Me</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <br>
     <div class="contact">
-        <div class="intro"><u>Contact me</u><br><br></div>
-
-        <img src="images/email.svg" height="20" width="20" alt="email">
-
-        <a href="mailto:sanjushahgupta@gmail.com">
-            sanjushahgupta@gmail.com
-        </a>
-        <div>
-            <img src="images/phone.svg" height="20" width="20" alt="email">
-            <a href="tel: +49 1577 35074">Tel: +49 1577
-                35074</a>
-        </div>
+        <div class="intro">Contact me<br><br></div>
         <br>
         <form action="" method="post" id="contactForm">
             <label class="basicLabel" for="email">Email: &nbsp; &nbsp; &nbsp; &nbsp;</label>
-            <input type="email" id="email" placeholder="Enter Email" required><br>
-
-            <br> <label class="basicLabel" for="phoneNumber">Telephone: &nbsp;</label>
-            <input type="tel" id="phoneNumber" placeholder="Enter phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                required><br>
-
+            <input type="email" id="email" placeholder="Enter your email address" required><br>
             <br><label class="basicLabel" for="textMessage">Message: &nbsp; &nbsp;</label>
-            <textarea maxlength="100" id="textMessage" placeholder=" Write your message" required></textarea><br>
+            <textarea maxlength="800" id="textMessage" placeholder="Enter your message" cols=" 40" rows="10"
+                required></textarea><br>
             <input type="submit" value="Send message" id="submit"><br>
-        </form>
+        </form><br><br>
     </div>
     <footer class="page-footer">
         <p>Find me on</p>
