@@ -10,10 +10,10 @@ toggleBtn.addEventListener("click", function () {
 })
 
 var typed = new Typed(".animateText", {
-    strings: ["Web Developer", "Android Developer", "Android and web developer"],
+    strings: ["Web Developer", "Android Developer", "Web and Android Developer"],
     typeSpeed: 50,
     loop: true,
-    backDelay: 90,
+    backDelay: 900,
     backSpeed: 30
 });
 

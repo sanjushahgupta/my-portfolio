@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
@@ -25,51 +24,143 @@
         <div class="wrapper">
             <header>
                 <div class="logo">
-                    <i class="fa-solid fa-s"></i>
-                    <div class="logo-text">Sanju Shah</div>
+                    <img src="images/logo.png" alt="logo">
                 </div>
                 <nav>
                     <div class="togglebtn">
                         <span></span>
                         <span></span>
                         <span></span>
-                        <span></span>
                     </div>
                     <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#workSection">Work</a></li>
+                        <li><a href="#contactSection">Contact Me</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="container">
-                <div class="profile-pic">
-                    <img src="images/myprofile.jpeg" alt="profile pic">
+                <div class="test">
+                    <div class="profile-pic">
+                        <img src="images/myprofile.jpeg" alt="profile pic">
+                    </div>
+                    <h5><span class="animateText">Web Developer</span></h5>
                 </div>
-
                 <div class="intro-text">
-                    <h5>Hi I'm <span class="animateText">Web Developer</span></h5>
+
                     <h1>Sanju Shah</h1>
                     <p>A software developer with a passion for creating
                         innovative and user-friendly applications and websites
-                        living in Germany from Nepal. Degree holder in Computer Application and former studio producer
-                        in a
-                        government organization turned coder.</p>
-                    <div class="btn-group"><a href="#" class="btn active">Download CV</a>
-                        <a href="#" class="btn active">Contact</a>
+                        living in Germany. Degree holder in Computer Application and former studio producer
+                        in
+                        Nepal Television turned coder.</p>
+                    <div class="btn-group"><a href="files/Sanju's resume.pdf" class="btn active">Download CV</a>
+                        <a href="mailto:sanjushahgupta@gmail.com" class="btn active">Contact</a>
                     </div>
 
                     <div class="social-media">
-                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/sanjushahgupta"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://medium.com/@glienicker"><i class="fa-brands fa-medium"></i></a>
+                        <a href="https://www.linkedin.com/in/sanju-shah/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sanjushahgupta" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@glienicker" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="workSection">
+
+        <div class="page-header">
+            <br> <br>
+            <div class="wrapper">
+                <div class="contact">
+                    <br>
+                    <br>
+                    <div class="intro"> My Work and Projects<br><br></div>
+                </div>
+                <div class="grid">
+
+                    <div class="grid__item">
+                        <strong> Chat AI App</strong><br>
+                        Chat with an AI using your OpenAI API key with this app. Enter your API key and start
+                        chatting
+                        with
+                        the
+                        AI instantly. The app will store your API key locally on your device, and there’s no
+                        need
+                        for
+                        any
+                        login
+                        credentials.<br>
+                        <a href="https://play.google.com/store/apps/details?id=com.digitalaya.chat" target="_blank">
+                            On Google Play
+                        </a>
+                    </div>
+                    <div class="grid__item">
+                        <strong>GrandAutoCodes App</strong><br>
+                        An app that has cheat codes for GTA 5 on different platforms such as Xbox, Playstation,
+                        Pc, and
+                        Phone.
+                        Built using kotlin, jetpack.<br>
+                        <a href="https://play.google.com/store/apps/details?id=digitalaya.grantcodes" target="_blank">
+                            On Google Play
+                        </a>
+                    </div>
+
+                    <div class="grid__item">
+                        <strong>Hiccups App </strong><br>
+                        An app for sending hiccups to other registered users. Built using Kotlin, Firestore,
+                        Koin,
+                        Coroutine,
+                        and Navigation.<br><a href="https://github.com/sanjushahgupta/hiccupsApp" target="_blank">
+                            On Github
+                        </a>
+                    </div>
+                    <div class="grid__item">
+                        <strong>Notezz App </strong><br> A note-taking Android application built in Kotlin using
+                        Jetpack
+                        to
+                        register
+                        users,
+                        update
+                        user
+                        accounts.<br>
+                        <a href="https://play.google.com/store/apps/details?id=compose.notezz" target="_blank">
+                            On Google Play
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="contactSection">
+            <div class="page-header">
+                <br><br><br> <br>
+                <div class="wrapper">
+                    <div class="contact">
+                        <div class="intro">Contact Me<br><br></div>
+                        <br>
+                        <form action="" method="post" id="contactForm">
+                            <input type="email" id="email" placeholder="Enter your email address" required>
+                            <textarea maxlength="800" id="textMessage" placeholder="Enter your message" cols=" 40"
+                                rows="10" required></textarea>
+                            <input type="submit" value="Send message" id="submit"><br>
+                        </form><br><br>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/sanju-shah/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/sanjushahgupta" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://medium.com/@glienicker" target="_blank"><i
+                                    class="fa-brands fa-medium"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="js/tota11y.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
         integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="

@@ -2,19 +2,23 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     text-decoration: none;
 }
 
 body{
     overflow-x: hidden;
+    background-color: #080808;
+    color: #fff;
 }
 
 .page-header{
     width:100%;
     height:100%;
     min-height: 100vh;
-    background-color: #6C7593;
+    background-color:#222;
+    color: white;
+
 }
 
 .wrapper{
@@ -38,24 +42,18 @@ header{
    align-items: center;
 }
 
-.logo i{
-    height: 45px;
-    width:45px;
-    background-color:blue;
-    border-radius: 50%;
-    color:#fff;
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    text-align: center;
 
-}
-.logo .logo-text{
+.logo{
     font-size: 24px;
     font-weight: 500;
     color: #fff;
+}
+.logo img{
+    height: 60px;
+    width:80px;   
+}
+.logo img:hover{
+   rotate:-400deg;    
 }
 
 nav .togglebtn{
@@ -71,7 +69,7 @@ nav .togglebtn{
 
 nav .togglebtn span{
     display: block;
-    background-color: black;
+    background-color: white;
     margin: 5px 0px;
     width:100%;
     height: 3px;
@@ -86,11 +84,19 @@ nav .navlinks li{
     font-size: 20px;
     margin-right: 2rem;
 }
+nav .navlinks li a{
+    color: rgb(203, 198, 196);
+}
+nav .navlinks li:hover{
+    transform: scale(0.8);
+}
+
 .container{
     display:flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 4rem;
+
 }
 
 .container .profile-pic {
@@ -116,44 +122,74 @@ nav .navlinks li{
     display: flex;
     flex-direction: column;
 }
+.test{
+    display: flex;
+    flex-direction: column;
 
-.intro-text h5 span{
-    color: black;
-    font-size: 14px;
+}
+.test h5 span{
+    color: white;
+    font-size: 22px;
 }
 
+.test h5{
+margin-top: 20px;
+}
 .intro-text h1{
-    color: black;
-    font-size: 3rem;
+    color:white;
+    font-size: 2.5rem;
+ 
 }
 
 .intro-text p{
     color: white;
+    font-size: 20px;
 }
 .btn-group{
     margin: 45px 0;
 }
-.btn-group .btn{
-    border-color: rgb(171, 169, 169);
-    color: white;
-    background-color: #333;
+.btn-group .btn, .contact #submit{
+    color: #f5f2f2; 
+    background-color:#9e340e;
     padding: 12px 25px;
     margin: 5px 0;
     margin-right: 7px;
     border-radius: 30px;
-    border: 2px solid rgb(118, 108, 108);
+    font-family: a;
 }
-.intro-text .social-media i{
-    color:#fff;
-    font-size: 25px;
+
+#textMessage, #email{
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+    margin:8px;
+    text-align: left;
+    }
+
+    
+    .contact .intro , .work {
+        text-align: center;
+        font-size:25px;
+    }
+
+.contact .social-media{
+text-align: center;
+}
+.btn-group .btn:hover{
+ opacity: 0.5;
+}
+
+.social-media i, .contact .social-media i{
+    color:rgb(203, 198, 196);
+    font-size: 30px;
     margin-right: 10px;
 }
-.intro-text .social-media i:hover{
-    opacity: 0.5;
+ .social-media i:hover,  .social-media i:hover{
+    transform: scale(1.2);
 }
 
 .btn.active{
-    border-color: blue;
+    border-color: rgb(194, 194, 200);
 }
 
 @media (max-width:930px){
@@ -188,7 +224,7 @@ nav .navlinks li{
         bottom: 0;
         width: 60%;
         height: 100vh;
-        background-color: #6C7593;
+      background-color:#222 ;
         z-index:3;
         box-shadow: 5px 13px 30px rgba(0, 0, 0,0.5);
         transition: 0.5s;
@@ -219,4 +255,19 @@ nav .navlinks li{
         padding:40px 0px;
     }
 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 10px;
+    margin: 10px; 
+    padding:10px;
+}
+
+.grid__item{
+    border-color:#6C7593;
+    padding: 10px;
+    font-size: 19px;
+    letter-spacing: 0.3px;
 }
