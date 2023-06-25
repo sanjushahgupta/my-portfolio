@@ -13,58 +13,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/style.production.css">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <header class="page-header">
-        <img src="images/logo.png" class="page-header-logo" alt="logo">
-        <nav>
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href=" about.html">About</a>
-                </li>
-                <li role="presentation">
-                    <a href=" contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <div>
-        <img id="profile-img" src="images/myprofile.jpeg" alt="image">
-        <div class="intro-home">
-            Sanju Shah
+    <div class="page-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Sanju Shah</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">work</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="profile-pic">
+                    <img src="images/myprofile.jpeg" alt="profile pic">
+                </div>
+
+                <div class="intro-text">
+                    <h5>Hi I'm <span class="animateText">Web Developer</span></h5>
+                    <h1>Sanju Shah</h1>
+                    <p>A software developer with a passion for creating
+                        innovative and user-friendly applications and websites
+                        living in Germany from Nepal. Degree holder in Computer Application and former studio producer
+                        in a
+                        government organization turned coder.</p>
+                    <div class="btn-group"><a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sanjushahgupta"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/@glienicker"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="short-description">
-            A software developer with a passion for creating innovative and user-friendly applications and websites
-            living
-            in Germany from Nepal. Degree holder in Computer Application and former studio producer in a government
-            organization turned coder.
-            <a href="work.html">Check out my work</a>
-        </p>
     </div>
 
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/feed/">
-                <img src="images/linkedin.svg" alt="linkedin"></a>
-            &nbsp; &nbsp;
-            <a href="https://github.com/sanjushahgupta">
-                <img src="images/github.svg" height="40" width="40" alt="github"></a>
-            &nbsp; &nbsp;
-            <a href="https://medium.com/@glienicker"><img src="images/mediumIcon.svg" alt="medium" height="40"
-                    width="40"></a>
-        </div>
-    </footer>
     <script src="js/tota11y.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+        integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
