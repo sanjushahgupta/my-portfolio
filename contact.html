@@ -13,55 +13,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/style.production.css">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header class="page-header">
-        <img src="images/logo.png" class="page-header-logo" alt="logo">
-        <nav>
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href=" about.html">About</a>
-                </li>
-                <li role="presentation">
-                    <a href=" contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <div class="contact">
-        <div class="intro">Contact Me<br><br></div>
-        <br>
-        <form action="" method="post" id="contactForm">
-            <label class="basicLabel" for="email">Email: &nbsp; &nbsp; &nbsp; &nbsp;</label>
-            <input type="email" id="email" placeholder="Enter your email address" required><br>
-            <br><label class="basicLabel" for="textMessage">Message: &nbsp; &nbsp;</label>
-            <textarea maxlength="800" id="textMessage" placeholder="Enter your message" cols=" 40" rows="10"
-                required></textarea><br>
-            <input type="submit" value="Send message" id="submit"><br>
-        </form><br><br>
-    </div>
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/feed/" target="_blank">
-                <img src="images/linkedin.svg" alt=" linkedin"></a>
-            &nbsp; &nbsp;
-            <a href="https://github.com/sanjushahgupta" target="_blank">
-                <img src="images/github.svg" height="40" width="40" alt="github"></a>
-            &nbsp; &nbsp;
-            <a href="https://medium.com/@glienicker" target="_blank"><img src="
-             images/mediumIcon.svg" alt="medium" height="40" width="40"></a>
+    <div class="page-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="contact">
+                <div class="intro">Contact Me<br><br></div>
+                <br>
+                <form action="" method="post" id="contactForm">
+                    <input type="email" id="email" placeholder="Enter your email address" required aria-label="email">
+                    <textarea maxlength="800" id="textMessage" placeholder="Enter your message" cols=" 40" rows="10"
+                        required aria-label="Messag"></textarea>
+                    <input type="submit" value="Send message" id="submit"><br>
+                </form><br><br>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/sanju-shah/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sanjushahgupta" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://medium.com/@glienicker" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
     <script src="js/tota11y.min.js"></script>
 </body>
 
