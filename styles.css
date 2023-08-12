@@ -118,7 +118,7 @@ nav .navlinks li:hover{
     transform: scale(1.2);
 }
 .detailsBtn{
-  color: #03525a;  
+  color: #034a1d;;  
 }
 .intro-text{
     max-width: 500px;
@@ -297,7 +297,7 @@ text-align: center;
 
   .grid__item a{
     text-align: left;
-    color: #4989b6;
+    color: #2596e6;
     font-size: 18px;
   }
 
