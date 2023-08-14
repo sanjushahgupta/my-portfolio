@@ -27,11 +27,11 @@ detailBtns.forEach(function (detailBtn, index) {
 })
  
 
-var typed = new Typed(".animateText", {
+/*var typed = new Typed(".animateText", {
     strings: ["Android Developer", "Full Stack Developer"],
     typeSpeed: 50,
     loop: true,
     backSpeed: 30,
-});
+});*/
 
 
