@@ -109,7 +109,7 @@
 
           <div class="grid">
             <div class="grid__item">
-              <img src="images/flixworld.png" alt="flixworld" />
+              <img src="images/flix-world.png" alt="flixworld" />
               <p>FlixWorld</p>
               <div class="detailsBtn">Details</div>
               <div class="my-modal">
@@ -231,8 +231,8 @@
                     Chat App
                   </p>
                   <p style="color: white; font-size: 20px">
-                    A chat application that allows users
-                    to chat and share both images and their current location.
+                    A chat application that allows users to chat and share both
+                    images and their current location.
                     <br /><br />
                     Built with React Native, React Native Gifted Chat library,
                     Firebase cloud storage
@@ -402,22 +402,32 @@
             <div class="contact">
               <div class="intro">Contact Me<br /><br /></div>
               <br />
-              <form action="sanjushahgupta" method="post" id="contactForm">
+              <form
+                action="https://formspree.io/f/mjvqjwja"
+                method="post"
+                id="contactForm"
+              >
+                <label hidden> Your email: </label>
                 <input
-                  type="email"
                   id="email"
+                  type="email"
+                  name="email"
                   placeholder="Your email address"
                   required
                 />
+
+                <label hidden> Your message: </label>
                 <textarea
-                  maxlength="800"
                   id="textMessage"
+                  maxlength="800"
+                  name="message"
                   placeholder="Your message"
                   cols=" 40"
                   rows="10"
                   required
                 ></textarea>
-                <input type="submit" value="Send message" id="submit" /><br />
+
+                <button class="contact-btn" type="submit">Submit</button>
               </form>
               <br /><br />
               <div class="social-media">
