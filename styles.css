@@ -179,7 +179,13 @@ nav .navlinks li:hover {
   font-size: 25px;
 }
 
-.contact .social-media {
+.education {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.social-media {
   text-align: center;
 }
 .btn-group .btn:hover {
@@ -303,4 +309,34 @@ nav .navlinks li:hover {
 .animateText {
   font-size: 24px;
   margin: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 8px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+.job-experience {
+  margin-top: 20px;
+}
+.graduation-date,
+.job-date {
+  color: #777;
 }
